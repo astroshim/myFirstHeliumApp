@@ -15,7 +15,7 @@
  * limitations under the License.
  */
 
-package my.company.helium;
+package com.my.company;
 
 import org.apache.zeppelin.helium.Application;
 import org.apache.zeppelin.helium.ApplicationContext;
@@ -24,9 +24,8 @@ import org.apache.zeppelin.resource.ResourceSet;
 
 import java.io.IOException;
 
-public class myFirstApp extends Application {
-
-  public myFirstApp(ApplicationContext context) {
+public class MyFirstHeliumApp extends Application {
+  public MyFirstHeliumApp(ApplicationContext context) {
     super(context);
   }
 
