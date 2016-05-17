@@ -12,16 +12,32 @@
     <url>http://zeppelin.incubator.apache.org</url>
 
     <properties>
-        <!--
+<!--
         <zeppelin.interpreter.version>0.6.0-incubating-SNAPSHOT</zeppelin.interpreter.version>
         <zeppelin.zengine.version>0.6.0-incubating-SNAPSHOT</zeppelin.zengine.version>
-        -->
+-->
         <slf4j.version>1.7.10</slf4j.version>
         <log4j.version>1.2.17</log4j.version>
     </properties>
 
     <dependencies>
-        <!--
+		<dependency>
+			<groupId>zeppelin-interpreter</groupId>
+			<artifactId>zeppelin-interpreter</artifactId>
+			<version>0.6.0</version>
+			<scope>system</scope>
+			<systemPath>${project.basedir}/lib/zeppelin-interpreter-0.6.0-incubating-SNAPSHOT.jar</systemPath>
+		</dependency>
+
+		<dependency>
+			<groupId>zeppelin-zengine</groupId>
+			<artifactId>zeppelin-zengine</artifactId>
+			<version>0.6.0</version>
+			<scope>system</scope>
+			<systemPath>${project.basedir}/lib/zeppelin-zengine-0.6.0-incubating-SNAPSHOT.jar</systemPath>
+		</dependency>
+
+<!--
         <dependency>
             <groupId>org.apache.zeppelin</groupId>
             <artifactId>zeppelin-zengine</artifactId>
@@ -33,7 +49,7 @@
             <artifactId>zeppelin-interpreter</artifactId>
             <version>${zeppelin.interpreter.version}</version>
         </dependency>
-        -->
+-->
         <dependency>
             <groupId>org.slf4j</groupId>
             <artifactId>slf4j-log4j12</artifactId>
